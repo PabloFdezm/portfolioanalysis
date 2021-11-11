@@ -7,4 +7,5 @@ colnames(risky_mf) <- c('date','price')
 risky_mf = risky_mf %>%
   mutate(date = as.Date(date), price = as.numeric(price))
 
-write.csv(risky_mf, 'risky_mf.csv')
+write_rds(risky_mf, 'risky_mf.rds')
+#write.csv(risky_mf, 'risky_mf.csv')
